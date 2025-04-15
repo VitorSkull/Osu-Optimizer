@@ -1,0 +1,7 @@
+D:\Programação\Projetos\OsuBooster\bin\Debug\OsuBooster.exe.config
+D:\Programação\Projetos\OsuBooster\bin\Debug\OsuBooster.exe
+D:\Programação\Projetos\OsuBooster\bin\Debug\OsuBooster.pdb
+D:\Programação\Projetos\OsuBooster\obj\Debug\OsuBooster.csproj.AssemblyReference.cache
+D:\Programação\Projetos\OsuBooster\obj\Debug\OsuBooster.csproj.CoreCompileInputs.cache
+D:\Programação\Projetos\OsuBooster\obj\Debug\OsuBooster.exe
+D:\Programação\Projetos\OsuBooster\obj\Debug\OsuBooster.pdb
