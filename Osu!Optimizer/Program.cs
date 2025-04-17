@@ -326,16 +326,19 @@ namespace OsuOptimizer
                         {
                             try
                             {
-                                mainDiscordProcess.ProcessorAffinity = (IntPtr)afinityDiscord;
-                                if (priority == 1)
+                                if (discord.WorkingSet64 >= mainDiscordProcess.WorkingSet64)
                                 {
-                                    mainDiscordProcess.PriorityClass = ProcessPriorityClass.Normal;
+                                    mainDiscordProcess.ProcessorAffinity = (IntPtr)afinityDiscord;
+                                    if (priority == 1)
+                                    {
+                                        mainDiscordProcess.PriorityClass = ProcessPriorityClass.Normal;
+                                    }
+                                    if (priority == 2)
+                                    {
+                                        mainDiscordProcess.PriorityClass = ProcessPriorityClass.BelowNormal;
+                                    }
+                                    Console.WriteLine($"Best afinity defined for Discord (PID: {discord.Id}).");
                                 }
-                                if (priority == 2)
-                                {
-                                    mainDiscordProcess.PriorityClass = ProcessPriorityClass.BelowNormal;
-                                }
-                                Console.WriteLine($"Best afinity defined for Discord (PID: {discord.Id}).");
                             }
                             catch (Exception ex)
                             {
