@@ -1,2 +1,2 @@
 # Osu-Optimizer
-developing
+this is just a prototype, some options may not work very well in some computers...
